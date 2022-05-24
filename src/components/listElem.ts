@@ -16,7 +16,14 @@ export class listElem extends Component implements iTodo {
     createTemplate() {
         let template = `
         <li>
-            OER ERJER ERER
+            <div>${this.todo.name}</div>
+            <div>${this.todo.responsable}</div>
+            <div>
+                <label class="switch">
+                    <input type="checkbox" ${(this.todo.isCompleted) ? 'checked' : ''}>
+                    <span class="slider round"></span>
+                </label>
+            </div>
         </li>
         `;
         return template;
