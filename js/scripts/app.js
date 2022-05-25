@@ -6,8 +6,13 @@ function app() {
     let selector = '.todo-list';
     todos.forEach((item) => {
         new listElem(item, selector);
-        console.log(item, selector);
-    });
+        // console.log(item, selector);
+
+    
+    })
+    ;
+
+  ;
 }
 (() => {
     document.addEventListener('DOMContentLoaded', app);

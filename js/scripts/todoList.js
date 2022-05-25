@@ -10,4 +10,3 @@ export function crearTodoList() {
     ];
     return data;
 }
-console.log(crearTodoList());

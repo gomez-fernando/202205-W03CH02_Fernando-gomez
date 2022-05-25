@@ -3,15 +3,23 @@ export class Todo {
     id;
     name;
     responsable;
-    isCompleted = false;
+    _isCompleted = false;
+    
     constructor(
     // eslint-disable-next-line no-unused-vars
     id, name, responsable) {
         this.id = id;
         this.name = name;
         this.responsable = responsable;
-        this.isCompleted = false;
+        this._isCompleted = false;
     }
+
+    get isCompleted() {
+        return this._isCompleted;
+    }
+    set isCompleted(value) {
+        this._isCompleted = value;
+    }
+   
 }
-const todo = new Todo(1, 'nombre', 'responsable');
-console.log(todo);
+
